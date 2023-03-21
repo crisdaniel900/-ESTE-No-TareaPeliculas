@@ -14,12 +14,12 @@ namespace Pelicula
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
-        public Pelicula(string titulo2, int año2, string pais2, string director)
+        public Pelicula(string titulo, int año)
      {
-        titulo2 = titulo;
-        año2 = año;
-        pais2 = pais;
-        this.director = director;
+        this.titulo = titulo;
+        this.año = año;
+        //this.pais = pais;
+        //this.director = director;
      }
      
         //Propiedades
@@ -126,18 +126,12 @@ namespace Pelicula
 
         static void Main(string[] args)
         {
-    Pelicula p1 = new Pelicula("Lalaland", 2016, "USA", "Hola" );
+    Pelicula p1 = new Pelicula("lalaland", 2016 );
     p1.AgregaActor(new Actor("Ryan Gosling", 1980));
     p1.AgregaActor(new Actor("Emma Stone", 1988));
 
 
-     Pelicula p2 = new Pelicula("Lalaland", 2016, "USA", "Hola" );
-    p1.AgregaActor(new Actor("Ryan Gosling", 1980));
-    p1.AgregaActor(new Actor("Emma Stone", 1988));
-
-     Pelicula p3 = new Pelicula("Lalaland", 2016, "USA", "Hola" );
-    p1.AgregaActor(new Actor("Ryan Gosling", 1980));
-    p1.AgregaActor(new Actor("Emma Stone", 1988));
+    
 
     p1.ImprimeActores();
         }

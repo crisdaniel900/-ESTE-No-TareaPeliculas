@@ -23,35 +23,50 @@ namespace Pelicula
      }
      
         //Propiedades
-        public string Titulo 
+        public string GetTitulo() 
     { 
-        get { return titulo; } 
-        set { titulo = value; }
+        return titulo; 
     }
     
-        public int Año
-        {
-            get {return año;}
-            set {año = value;}
-        }
-
-        public string Pais
-        {
-            get {return pais;}
-            set {pais = value;}
-        }
-
-         public string Director 
-    { 
-        get { return director; } 
-        set { director = value; }
+    public void SetTitulo(string titulo2)
+    {
+        titulo=titulo2;
     }
 
+       public int GetAño()
+       {
+        return año;
+       }
+
+       public void SetAño(int year)
+       {
+        año = year;
+       }
+
+       public string GetPais()
+       {
+        return pais;
+       }
+
+       public void SetPais(string country)
+       {
+        pais = country;
+       }
+
+         public string GetDirector() 
+         {
+            return director;
+         }
+
+        public void SetDirector(string director2)
+        {
+            director = director2;
+        }
 
         //Métodos
         public void Imprime()
         {
-          Console.WriteLine($"{titulo} ({año})", titulo, año);
+          Console.WriteLine($"{titulo} ({año})");
 
         }
 
@@ -108,7 +123,6 @@ namespace Pelicula
 
     class Program
     {
-
 
         static void Main(string[] args)
         {

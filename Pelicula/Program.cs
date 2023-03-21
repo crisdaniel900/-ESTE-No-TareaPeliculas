@@ -7,9 +7,9 @@ namespace Pelicula
     public class Pelicula
     {
         //Campos
-        private string titulo;
+        public string titulo;
         private int año;
-        private string pais;
+        public string pais;
         private string director;
         private List<Actor> actores = new List<Actor>();
 

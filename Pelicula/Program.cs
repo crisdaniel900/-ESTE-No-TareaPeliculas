@@ -126,7 +126,7 @@ namespace Pelicula
 
         static void Main(string[] args)
         {
-    Pelicula p1 = new Pelicula("La La Land", 2016, "USA", "Hola" );
+    Pelicula p1 = new Pelicula("Lalaland", 2016, "USA", "Hola" );
     p1.AgregaActor(new Actor("Ryan Gosling", 1980));
     p1.AgregaActor(new Actor("Emma Stone", 1988));
 

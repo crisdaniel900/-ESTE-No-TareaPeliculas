@@ -7,18 +7,18 @@ namespace Pelicula
     public class Pelicula
     {
         //Campos
-        public string titulo;
+        private string titulo;
         private int año;
-        public string pais;
+        private string pais;
         private string director;
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
-        public Pelicula(string titulo, int año, string pais, string director)
+        public Pelicula(string titulo2, int año2, string pais2, string director)
      {
-        this.titulo = titulo;
-        this.año = año;
-        this.pais = pais;
+        titulo2 = titulo;
+        año2 = año;
+        pais2 = pais;
         this.director = director;
      }
      

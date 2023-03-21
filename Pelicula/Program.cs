@@ -130,6 +130,15 @@ namespace Pelicula
     p1.AgregaActor(new Actor("Ryan Gosling", 1980));
     p1.AgregaActor(new Actor("Emma Stone", 1988));
 
+
+     Pelicula p2 = new Pelicula("Lalaland", 2016, "USA", "Hola" );
+    p1.AgregaActor(new Actor("Ryan Gosling", 1980));
+    p1.AgregaActor(new Actor("Emma Stone", 1988));
+
+     Pelicula p3 = new Pelicula("Lalaland", 2016, "USA", "Hola" );
+    p1.AgregaActor(new Actor("Ryan Gosling", 1980));
+    p1.AgregaActor(new Actor("Emma Stone", 1988));
+
     p1.ImprimeActores();
         }
     }
